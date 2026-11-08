@@ -19,43 +19,25 @@ const TEXTOS = {
 
   /* ================= INTRODUÇÃO (antes de começar) ================= */
   intro:
-`Tyler não lembra de ter deitado na grama.
-
-Mas o frio é real. A terra molhada nas mãos é real. E o escuro — o escuro só abre um círculo de luz ao redor dele, como se o mundo inteiro tivesse vergonha de olhar.
-
-Ele se lembra do hospital. Do leito 312. Da mão da mãe ficando fria.
-
-Ele não se lembra do que fez depois. Ou finge não lembrar.
-
-O vento sussurra uma palavra quando ele passa: assassino.
-
-Dois vultos esperam no campo. O Sol, que acusa. A Lua, que é o remorso.
-
-Oito memórias. Seis trancas escondidas. Duas fitas que eles guardam.
-
-No fim do campo, uma porta. Ela só abre para quem carrega tudo — inclusive a verdade.`,
+`Mais uma chega.....
+ você.. dificílmente consegue dormir sem ter as mesmas coisas denovo e denovo rodando sobre sua cabeça 
+ poderia ter sido diferente?... 
+ talvez...
+ tudo que você sente agora é o grando desconforto do silencio....
+ 
+ (encontre o que se perdeu em sua mente... enfrente, lute... mas não morra, não se torne um monstro para derrotar outro)`,
 
   /* ================= FINAL (depois da porta) ================= */
   ending:
-`A porta não rangeu. Estava esperando por ele.
-
-Do outro lado não havia branco, nem túnel, nem perdão.
-
-Havia uma sala. Uma cadeira. Uma câmera no canto, com a luz vermelha acesa.
-
-Ele se sentou. Olhou para a lente. E disse, em voz alta, pela primeira vez:
-
-“Fui eu. Ela pediu para parar, e eu disse a mim mesmo que era piedade. Mas era cansaço. Eu estava cansado, e usei o cansaço dela como desculpa. Às 14:07 eu empurrei o êmbolo. Fui eu.”
-
-A câmera não respondeu. Não absolveu. Não condenou.
-
-Só gravou.
-
-Lembrar não absolve. Confessar não apaga. Mas é o primeiro passo de quem decidiu parar de fugir.
-
-No corredor, a luz continuou acesa. E Tyler, pela primeira vez em anos, não apagou.
-
-FIM`,
+`lembre-se...
+você não pode fugir... quando mais você se afastar...
+eu lhe puxarei para o circo...
+irei brincar...
+irei cantar...
+irei saborar seu doce desespero...
+tic tac tyle...
+tic tac....
+FIM(beta)`,
 
   /* ================= SUSSURROS DO CAMPO =================
      Aparecem flutuando perto do Tyler de tempos em tempos. */
@@ -71,20 +53,24 @@ FIM`,
   npc: {
     sol: {
       first: [
-        'Você chegou, Tyler. Sentiu o frio? Aqui tudo é verdade.',
-        'Este campo fica no fim de tudo. E todo mundo aqui sabe o que você fez.',
-        'Eu sou o Sol. Eu acuso. Eu mostro. O campo sussurra “assassino” porque é o que você é.',
+        'hora,hora,hora....',
+        'veio por causa da culpa?...',
+        'veio para pedir desculpas?',   
+        'NÃO IMPORTA!!!!',
+         'você não é puro...',
+         '.....',
       ],
-      return: ['Vamos ao que interessa, Tyler.'],
+      return: ['seu pagamento é tão caro quanto... sua sorte que eu não quero sangue...porem ainda quero que você pague..'],
       complete: [
         'Você trouxe. Bom. A verdade não espera.',
-        'Cada passo seu nesse campo é um passo na direção do que você fez.',
+        'ao menos não demonstra medo a o admitir que esta errado....',
+         'seu trabalho ainda não acabou maldito!!!!!'
       ],
       remind: ['Ainda não acabou. {missao}', 'Ande. O campo inteiro está olhando.'],
       game: [
-        'Você fez tudo que eu pedi. Provou que encara a verdade.',
-        'Agora um último jogo, Tyler. Chama-se INTERROGATÓRIO. Encontre os pares do que você fez.',
-        'Se vencer, eu te mostro a fita. A fita que a câmera gravou. Você vai querer ver? Não. Mas precisa.',
+        'Você fez tudo que eu pedi....',
+        'bom..bom...',
+        'se não se importa.. alguns vermes estava comendo isso, acho que isso é seu..',
       ],
       final: [
         'A fita não mente, Tyler. Você estava lá. Suas mãos estavam lá.',
@@ -93,24 +79,26 @@ FIM`,
     },
     lua: {
       first: [
-        'Shhh. Eu sou a Lua. Eu sou o que você sente quando ninguém está olhando.',
-        'Eu não te acuso, Tyler. Eu só te lembro. É pior.',
-        'A árvore ali atrás era um homem que não quis lembrar. Virou raiz. Você não vai ter essa sorte.',
+        'CALADOS! CALADOS! CALADOS!!!',
+        'eu não aguento mais.. porfavor...',
+         'PORFAVOR ALGUEM ME MATA.. EU NÃO AGUENTO MAIS...   '
+        '......',
       ],
-      return: ['De volta, Tyler. O remorso não vai embora.'],
+      return: ['por é sempre minha culpa....'],
       complete: [
-        'Você trouxe. Obrigada, Tyler. Bidu merecia.',
-        'Cada luz que você acende é um pedaço que você para de esconder.',
+        'obrigado...',
+        'obrigado...obrigado...obrigaddddddddddododododdddddddddddododododododooooooooooooooooooooo',
       ],
       remind: ['Ainda falta, querido. {missao}', 'Não desista. Desistir é o que você fez da primeira vez.'],
       game: [
-        'Você cuidou do que restou. Acendeu luzes. Leu a carta.',
-        'Agora brincamos de NÃO PISQUE. Os olhos vão abrir — e você olha de volta.',
-        'Se aguentar, eu te mostro a segunda fita. A do quarto escuro. A que você carrega por trás dos olhos.',
+        'então .. essa é a sensação...',
+        'me sinto tão... leve...',
+         '.....',
+        'tome... você merece.. leve...',
       ],
       final: [
-        'O remorso não grita. Ele fica de pé no escuro, olhando o chão.',
-        'Você não vai se livrar dele. Mas pode parar de fugir. Vá até a porta.',
+        'as pessoas não querem estar erradas... elas só querem apontar e levar a culpa para o mais facil..',
+        'só para não aguentar a dor de seus pecados...',
       ],
     },
   },
