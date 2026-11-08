@@ -81,7 +81,7 @@ FIM(beta)`,
       first: [
         'CALADOS! CALADOS! CALADOS!!!',
         'eu não aguento mais.. porfavor...',
-         'PORFAVOR ALGUEM ME MATA.. EU NÃO AGUENTO MAIS...   '
+         'PORFAVOR ALGUEM ME MATA.. EU NÃO AGUENTO MAIS...   ',
         '......',
       ],
       return: ['por é sempre minha culpa....'],
