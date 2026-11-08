@@ -10,7 +10,9 @@
      (o jogador aperta E para passar). Pode adicionar/remover frases.
    - {missao}, {titulo}, {npc}, {n}, {a}, {b} são "buracos" que o jogo
      preenche sozinho — pode movê-los dentro da frase, mas não apague.
-   - \n pula linha nos textos longos (intro/final).
+   - ASPAS SIMPLES '...' = UMA linha só. NUNCA quebre linha dentro delas!
+   - Texto com várias linhas (intro/final) = CRASES `...`.
+   - Campos de tela (gameOverText, exitText, credits) quebram linha com <br>.
    - Não renomeie as CHAVES (sol, lua, s1, l1, simon, pa...) — só os textos.
    ====================================================================== */
 'use strict';
@@ -19,7 +21,7 @@ const TEXTOS = {
 
   /* ================= INTRODUÇÃO (antes de começar) ================= */
   intro:
-`Mais uma chega.....
+`Mais uma noite chega.....
  você.. dificílmente consegue dormir sem ter as mesmas coisas denovo e denovo rodando sobre sua cabeça 
  poderia ter sido diferente?... 
  talvez...
@@ -55,16 +57,16 @@ FIM(beta)`,
       first: [
         'hora,hora,hora....',
         'veio por causa da culpa?...',
-        'veio para pedir desculpas?',   
+        'veio para pedir desculpas?',
         'NÃO IMPORTA!!!!',
-         'você não é puro...',
-         '.....',
+        'você não é puro...',
+        '.....',
       ],
       return: ['seu pagamento é tão caro quanto... sua sorte que eu não quero sangue...porem ainda quero que você pague..'],
       complete: [
         'Você trouxe. Bom. A verdade não espera.',
         'ao menos não demonstra medo a o admitir que esta errado....',
-         'seu trabalho ainda não acabou maldito!!!!!'
+        'seu trabalho ainda não acabou maldito!!!!!',
       ],
       remind: ['Ainda não acabou. {missao}', 'Ande. O campo inteiro está olhando.'],
       game: [
@@ -81,7 +83,7 @@ FIM(beta)`,
       first: [
         'CALADOS! CALADOS! CALADOS!!!',
         'eu não aguento mais.. porfavor...',
-         'PORFAVOR ALGUEM ME MATA.. EU NÃO AGUENTO MAIS...   ',
+        'PORFAVOR ALGUEM ME MATA.. EU NÃO AGUENTO MAIS...',
         '......',
       ],
       return: ['por é sempre minha culpa....'],
@@ -93,7 +95,7 @@ FIM(beta)`,
       game: [
         'então .. essa é a sensação...',
         'me sinto tão... leve...',
-         '.....',
+        '.....',
         'tome... você merece.. leve...',
       ],
       final: [
@@ -238,7 +240,9 @@ FIM(beta)`,
   /* Textinhos que flutuam no mundo */
   floats: { lampLit: 'luz acesa' },
 
-  /* ================= TEXTOS DE TELA ================= */
+  /* ================= TEXTOS DE TELA =================
+     Estes campos são HTML: use <br> para quebrar linha.
+     (NÃO use aspas simples com quebra de linha de verdade!) */
   ui: {
     missionLabel: 'MISSÃO',
     npcNames: { sol: '☀ SOL', lua: '☾ LUA' },
